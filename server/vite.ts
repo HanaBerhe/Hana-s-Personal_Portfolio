@@ -3,7 +3,6 @@ import fs from "fs";
 import path from "path";
 import { createServer as createViteServer, createLogger } from "vite";
 import { type Server } from "http";
-import viteConfig from "../vite.config";
 import { nanoid } from "nanoid";
 import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
@@ -22,7 +21,9 @@ export function log(message: string, source = "express") {
   console.log(`${formattedTime} [${source}] ${message}`);
 }
 
-export async function setupVite(app: Express, server: Server) {
+eexport async function setupVite(app: Express, server: Server) {
+  if (process.env.NODE_ENV !== "development") return; // <-- Add this line
+
   const serverOptions = {
     middlewareMode: true,
     hmr: { server },
@@ -30,7 +31,6 @@ export async function setupVite(app: Express, server: Server) {
   };
 
   const vite = await createViteServer({
-    ...viteConfig,
     configFile: false,
     customLogger: {
       ...viteLogger,
@@ -68,7 +68,6 @@ export async function setupVite(app: Express, server: Server) {
     }
   });
 }
-
 export function serveStatic(app: Express) {
   const distPath = path.resolve(__dirname, "public");
 
