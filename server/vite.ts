@@ -21,8 +21,8 @@ export function log(message: string, source = "express") {
   console.log(`${formattedTime} [${source}] ${message}`);
 }
 
-eexport async function setupVite(app: Express, server: Server) {
-  if (process.env.NODE_ENV !== "production") return; // <-- Add this line
+export async function setupVite(app: Express, server: Server) {
+  if (process.env.NODE_ENV !== "development") return;
 
   const serverOptions = {
     middlewareMode: true,
