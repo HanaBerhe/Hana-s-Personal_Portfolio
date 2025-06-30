@@ -22,7 +22,7 @@ export function log(message: string, source = "express") {
 }
 
 eexport async function setupVite(app: Express, server: Server) {
-  if (process.env.NODE_ENV !== "development") return; // <-- Add this line
+  if (process.env.NODE_ENV !== "production") return; // <-- Add this line
 
   const serverOptions = {
     middlewareMode: true,
