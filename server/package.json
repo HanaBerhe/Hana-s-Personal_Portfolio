@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "esbuild index.ts --bundle --platform=node --outfile=dist/index.js --external:express --external:zod --external:multer --external:vite",
+    "build": "esbuild index.ts --bundle --platform=node --format=esm --outfile=dist/index.js --external:express --external:zod --external:multer --external:vite --external:nanoid --external:dotenv --external:emailjs-com --external:@vitejs/plugin-react --external:@replit/vite-plugin-runtime-error-modal",
     
     "start": "node dist/index.js"
   },
