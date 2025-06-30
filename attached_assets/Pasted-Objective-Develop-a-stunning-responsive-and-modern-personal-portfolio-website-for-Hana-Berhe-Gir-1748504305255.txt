@@ -1,0 +1,85 @@
+Objective:
+Develop a stunning, responsive, and modern personal portfolio website for Hana Berhe Girmay using the latest tech stacks (React.js, Next.js, Tailwind CSS, Framer Motion, etc.). The portfolio should showcase her education, work experience, skills, projects, and freelance services in a clean, professional, and engaging way.
+
+Key Requirements:
+Design & Aesthetics:
+
+Sleek, minimalist, and visually appealing UI/UX with smooth animations (e.g., Framer Motion).
+
+Modern color scheme (soft blues, whites, and accent colors).
+
+Fully responsive (mobile, tablet, desktop).
+
+Sections to Include:
+
+Hero Section:
+
+Name: Hana Berhe Girmay
+
+Tagline: "Data Analyst | ML Engineer | Translator | Tutor"
+
+Short intro: "A passionate Information Systems graduate from Addis Ababa University, blending data science, software engineering, and multilingual expertise."
+
+Call-to-action (CTA): "Explore My Work" + "Contact Me" buttons.
+
+About Me:
+
+Brief bio (1-2 paragraphs) highlighting education, skills, and career aspirations.
+
+Education: BSc in Information Systems, Addis Ababa University (Graduated July 2024).
+
+Skills:
+
+Tech: Python, SQL, Machine Learning, Data Analysis, React.js, Web Development.
+
+Languages: Fluent in English, Amharic, Afaan Oromo, and Aff-Somali.
+
+Work Experience:
+
+Commercial Bank of Ethiopia – Data Analyst & ML Engineer (Current)
+
+Ethio Telecom – Information Systems Intern (3 months)
+
+Unilever – *Marketing Data Analyst (2-month contract)*
+
+Tourism Ministry – Software Engineer Intern (3 months)
+
+Projects:
+
+Yekatit 12 Medical Hospital HR System (Graduation Project) – Web-based human resource management system.
+
+(Add 1-2 more projects if available).
+
+Freelance Services:
+
+Translation: English, Amharic, Afaan Oromo, Aff-Somali.
+
+Online Tutoring: KG–Grade 12 (All subjects).
+
+Contact Section:
+
+Email, LinkedIn, GitHub, phone number (optional).
+
+Contact form with Name, Email, and Message fields.
+
+Tech Stack:
+
+Frontend: Next.js (React), Tailwind CSS, Framer Motion (for animations).
+
+Deployment: Vercel or Netlify.
+
+Optional Backend: Firebase (for contact form submissions).
+
+Extras:
+
+Dark/light mode toggle.
+
+Downloadable resume button.
+
+Testimonials section (if available).
+
+Tone & Style:
+
+Professional yet approachable.
+
+Clear, concise, and engaging content.

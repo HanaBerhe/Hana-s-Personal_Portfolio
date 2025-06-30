@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 11% 98%; /* #F5F7FA */
+  --foreground: 222 47% 11%; /* #1E293B */
+  --muted: 210 20% 93%; /* #E2E8F0 */
+  --muted-foreground: 215 25% 27%; /* #475569 */
+  --popover: 0 0% 100%; /* #FFFFFF */
+  --popover-foreground: 222 47% 11%; /* #1E293B */
+  --card: 0 0% 100%; /* #FFFFFF */
+  --card-foreground: 222 47% 11%; /* #1E293B */
+  --border: 214 13% 91%; /* #E2E8F0 */
+  --input: 214 13% 91%; /* #E2E8F0 */
+  --primary: 270 50% 75%; /* Baby Purple */
+  --primary-foreground: 210 40% 98%; /* #F8FAFC */
+  --secondary: 270 40% 65%; /* Darker Baby Purple */
+  --secondary-foreground: 210 40% 98%; /* #F8FAFC */
+  --accent: 43 96% 56%; /* #F59E0B */
+  --accent-foreground: 222 47% 11%; /* #1E293B */
+  --destructive: 0 84% 60%; /* #EF4444 */
+  --destructive-foreground: 210 40% 98%; /* #F8FAFC */
+  --ring: 221 83% 53%; /* #3B82F6 */
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: 222 84% 5%; /* #0F172A */
+  --foreground: 210 40% 98%; /* #F8FAFC */
+  --muted: 217 33% 17%; /* #1E293B */
+  --muted-foreground: 215 20% 65%; /* #94A3B8 */
+  --popover: 222 84% 5%; /* #0F172A */
+  --popover-foreground: 210 40% 98%; /* #F8FAFC */
+  --card: 217 33% 17%; /* #1E293B */
+  --card-foreground: 210 40% 98%; /* #F8FAFC */
+  --border: 217 33% 17%; /* #1E293B */
+  --input: 217 33% 17%; /* #1E293B */
+  --primary: 270 50% 75%; /* Baby Purple */
+  --primary-foreground: 222 84% 5%; /* #0F172A */
+  --secondary: 270 40% 65%; /* Darker Baby Purple */
+  --secondary-foreground: 210 40% 98%; /* #F8FAFC */
+  --accent: 43 96% 56%; /* #F59E0B */
+  --accent-foreground: 222 84% 5%; /* #0F172A */
+  --destructive: 0 63% 31%; /* #991B1B */
+  --destructive-foreground: 210 40% 98%; /* #F8FAFC */
+  --ring: 221 83% 53%; /* #3B82F6 */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+
+  .glass-morphism {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .dark .glass-morphism {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .skill-card:hover {
+    transform: translateY(-8px);
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+}
