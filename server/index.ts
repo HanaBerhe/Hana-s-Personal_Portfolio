@@ -62,7 +62,7 @@ registerCertificateAdminRoutes(app);
     app.use(express.static(clientBuildPath));
 
     // Handle client-side routing by returning index.html for all non-API routes
-    app.get("/*", (req, res) => {
+    app.get("*", (req, res) => {
       if (!req.path.startsWith("/api")) {
         res.sendFile(path.join(clientBuildPath, "index.html"));
       } else {
